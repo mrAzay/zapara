@@ -1,0 +1,26 @@
+.apron {
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__inner {
+		padding-top: 238px;
+		padding-bottom: 260px;
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&__title {
+		font-size: 72px;
+		line-height: 88px;
+		margin-bottom: 50px;
+	}
+	&__text-block{
+		max-width: 500;
+		margin-left: auto;
+	}
+}

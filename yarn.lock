@@ -4860,7 +4860,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.17, postcss@^7.0.27, postcss@^7.0.5
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-posthtml-expressions@^1.4.5:
+posthtml-expressions@^1.4.5, posthtml-expressions@^1.6.0:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/posthtml-expressions/-/posthtml-expressions-1.7.1.tgz#b62b47a9c2cc8216cbbb07d2e9e7b293f3c1f5bc"
   integrity sha512-OtshMi4yJO/KAUSzLOdhWPaffPApY3lXZpJKzu4jVHfO7b8/a26Hgsl/cjC6PGtpyDEHbYChnV/b4DbIUoVREw==
@@ -4876,6 +4876,15 @@ posthtml-img-autosize@^0.1.6:
   dependencies:
     image-size "^0.9.1"
     normalize-path "^3.0.0"
+
+posthtml-include@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/posthtml-include/-/posthtml-include-1.6.0.tgz#21ebfb8c29dc9a24d5bef52da0f5586e3815b6ae"
+  integrity sha512-BFwFdBCLNs8C3Yg07yT/8ylWVMX694WW+kFBPfxTVH45ntdW81ZE8dKh+e+zjXUf2Oww62WD3gunhXi5ytsedA==
+  dependencies:
+    posthtml "^0.13.4"
+    posthtml-expressions "^1.6.0"
+    posthtml-parser "^0.5.2"
 
 posthtml-match-helper@^1.0.1:
   version "1.0.1"
@@ -4899,7 +4908,7 @@ posthtml-parser@^0.4.1:
   dependencies:
     htmlparser2 "^3.9.2"
 
-posthtml-parser@^0.5.0:
+posthtml-parser@^0.5.0, posthtml-parser@^0.5.2:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/posthtml-parser/-/posthtml-parser-0.5.3.tgz#e95b92e57d98da50b443e116fcee39466cd9012e"
   integrity sha512-uHosRn0y+1wbnlYKrqMjBPoo/kK5LPYImLtiETszNFYfFwAD3cQdD1R2E13Mh5icBxkHj+yKtlIHozCsmVWD/Q==

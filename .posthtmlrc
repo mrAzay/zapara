@@ -4,7 +4,9 @@
       "root": ".src/img"
     },
     "posthtml-modules": {
-      "root": "./src/html/"
-    }
+      "root": ".src",
+      "initial": "true"
+    },
+    "posthtml-include": {}
   }
 }
