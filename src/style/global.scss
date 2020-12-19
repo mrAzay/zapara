@@ -30,4 +30,12 @@ button {
 .link-btn{
 	padding: 9px 29px;
 	border: 2px solid #333333;
+	display: block;
+	width: fit-content;
+}
+
+h1,
+h2{
+	margin-inline: 0;
+	margin-block: 0;
 }
