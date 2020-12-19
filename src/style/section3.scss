@@ -1,4 +1,43 @@
-.tunic{
+.tunic {
 	padding-top: 100px;
 	padding-bottom: 248px;
+	background-position: center;
+
+	&__title {
+		font-size: 79px;
+		line-height: 96px;
+		margin-bottom: 162px;
+	}
+
+	&__text {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	&__button{
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 750px) {
+	.tunic__title {
+	
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.tunic__title {
+		font-size: 59px;
+		line-height: 1;
+	}
+
+	.tunic__subtitle {
+		
+		line-height: 1;
+	}
+
 }

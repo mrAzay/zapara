@@ -13,6 +13,12 @@ a{
 	margin: 0 auto;
 }
 
+@media (max-width: 1250px) {
+	.container{
+		padding: 0 30px;
+	}
+}
+
 button {
 	background-color: transparent;
 	border: none;
@@ -38,4 +44,5 @@ h1,
 h2{
 	margin-inline: 0;
 	margin-block: 0;
+	font-weight: normal;
 }

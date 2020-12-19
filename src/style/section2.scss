@@ -29,3 +29,28 @@
 		margin: 0 auto;
 	}
 }
+
+
+@media (max-width: 1700px) {
+	.apron{
+		background-position: center;
+	}
+}
+
+@media (max-width: 1300px) {
+	.apron{
+		background-position: center;
+	}
+}
+
+@media (max-width: 1040px) {
+	.apron{
+		background-position: 60%;
+	}
+}
+
+@media (max-width: 824px) {
+	.apron{
+		background-position: 70%;
+	}
+}

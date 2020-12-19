@@ -1,0 +1,51 @@
+.shirts {
+	padding-top: 258px;
+	padding-bottom: 239px;
+	background-position: center;
+
+	&__subtitle {
+		text-align: center;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 81px;
+		line-height: 99px;
+		margin-bottom: 40px;
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 750px) {
+	.shirts__title {
+		font-size: 60px;
+	}
+
+	.shirts__subtitle {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.shirts {
+		padding-top: 165px;
+		padding-bottom: 162px;
+	}
+	.shirts__title {
+		font-size: 40px;
+		line-height: 1;
+	}
+
+	.shirts__subtitle {
+		font-size: 16px;
+		line-height: 1;
+	}
+
+}
