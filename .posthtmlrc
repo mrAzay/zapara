@@ -3,10 +3,6 @@
     "posthtml-img-autosize": {
       "root": ".src/img"
     },
-    "posthtml-modules": {
-      "root": ".src",
-      "initial": "true"
-    },
     "posthtml-include": {}
   }
-}
+} 
