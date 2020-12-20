@@ -8,6 +8,32 @@ new Swiper('.swiper-container', {
 	},
 })
 
+new Swiper('.clients__slider', {
+	loop: false,
+	slidesPerView: 5,
+	navigation: {
+		nextEl: '.clients-button-next',
+		prevEl: '.clients-button-prev',
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		300: {
+			slidesPerView: 2,
+			spaceBetween: 50
+		},
+		// when window width is >= 480px
+		600: {
+			slidesPerView: 3,
+			spaceBetween: 50
+		},
+		// when window width is >= 640px
+		1000: {
+			slidesPerView: 5,
+			spaceBetween: 50
+		}
+	}
+})
+
 let centered
  if(window.innerWidth < 721){
 	console.log('work2')
