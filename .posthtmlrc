@@ -1,8 +1,15 @@
 {
   "plugins": {
     "posthtml-img-autosize": {
-      "root": ".src/img"
+      "root": "./src/img"
     },
-    "posthtml-include": {}
+    "posthtml-modules": {
+      "root": "./src",
+      "initial": "true"
+    },
+    "posthtml-include": {},
+    "posthtml-obfuscate": {
+      "includeMailto": false
+    }
   }
 } 

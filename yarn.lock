@@ -4901,6 +4901,11 @@ posthtml-modules@^0.6.4:
     posthtml-match-helper "^1.0.1"
     posthtml-render "^1.2.2"
 
+posthtml-obfuscate@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/posthtml-obfuscate/-/posthtml-obfuscate-0.1.5.tgz#d65f6642c96349002d33a2208845b2f7517d0fc8"
+  integrity sha1-1l9mQsljSQAtM6IgiEWy91F9D8g=
+
 posthtml-parser@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/posthtml-parser/-/posthtml-parser-0.4.2.tgz#a132bbdf0cd4bc199d34f322f5c1599385d7c6c1"
