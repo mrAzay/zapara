@@ -4,6 +4,7 @@
 
 	&__inner {
 		position: relative;
+		overflow: hidden;
 	}
 
 	&__bg {
@@ -96,4 +97,23 @@
 		font-size: 13px;
 	}
 
+}
+
+#cog {
+	-webkit-animation: cog 15s infinite;			
+	-moz-animation: cog 15s infinite;
+	-ms-animation: cog 15s infinite; 			
+	animation: cog 15s infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;		
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear	
+}
+
+@keyframes cog {
+100%{ 
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg)
+}
 }
