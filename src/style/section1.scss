@@ -97,3 +97,22 @@
 	}
 
 }
+
+#cog {
+	-webkit-animation: cog 6s infinite;			
+	-moz-animation: cog 6s infinite;
+	-ms-animation: cog 6s infinite; 			
+	animation: cog 6s infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;		
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear	
+}
+
+@keyframes cog {
+100%{ 
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg)
+}
+}
