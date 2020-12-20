@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 
-new Swiper('.swiper-container', {
+new Swiper('.preview__slider', {
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination',
@@ -18,7 +18,6 @@ document.querySelector('.header__burger').addEventListener('click', () => {
 })
 new Swiper('.clients__slider', {
 	loop: false,
-	slidesPerView: 5,
 	navigation: {
 		nextEl: '.clients-button-next',
 		prevEl: '.clients-button-prev',
@@ -32,12 +31,10 @@ new Swiper('.clients__slider', {
 		// when window width is >= 480px
 		600: {
 			slidesPerView: 3,
-			spaceBetween: 50
 		},
 		// when window width is >= 640px
 		1000: {
 			slidesPerView: 5,
-			spaceBetween: 50
 		}
 	}
 })
