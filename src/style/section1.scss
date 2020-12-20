@@ -67,3 +67,33 @@
 		}
 	}
 }
+
+@media (max-width: 600px){
+	.preview{
+		padding-top: 70px;
+	}
+}
+
+
+@media(max-width: 500px) {
+	.preview__slider-item-text-middle{
+		font-size: 29px;
+		line-height: 1;
+	}
+	.preview__slider-item-img{
+		margin-left: 0;
+	}
+
+}
+
+@media(max-width: 390px) {
+	.preview__slider-item-text-middle{
+		font-size: 22px;
+		line-height: 1;
+	}
+
+	.preview__slider-item-text-top{
+		font-size: 13px;
+	}
+
+}

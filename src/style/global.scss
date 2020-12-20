@@ -40,6 +40,13 @@ button {
 	width: fit-content;
 }
 
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 h1,
 h2{
 	margin-inline: 0;

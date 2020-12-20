@@ -8,4 +8,12 @@ new Swiper('.swiper-container', {
 	},
 })
 
+document.querySelector('.header__menu-btn').addEventListener('click', () => {
+	document.querySelector('.header__menu').classList.remove('active')
+})
+
+
+document.querySelector('.header__burger').addEventListener('click', () => {
+	document.querySelector('.header__menu').classList.add('active')
+})
 

@@ -20,37 +20,46 @@
 		margin-bottom: 50px;
 		font-weight: normal;
 	}
-	&__text-block{
+
+	&__text-block {
 		max-width: 350px;
 		margin-left: auto;
 		text-align: center;
 	}
-	&__button{
+
+	&__button {
 		margin: 0 auto;
 	}
 }
 
 
 @media (max-width: 1700px) {
-	.apron{
+	.apron {
 		background-position: center;
 	}
 }
 
 @media (max-width: 1300px) {
-	.apron{
+	.apron {
 		background-position: center;
 	}
 }
 
 @media (max-width: 1040px) {
-	.apron{
+	.apron {
 		background-position: 60%;
 	}
 }
 
 @media (max-width: 824px) {
-	.apron{
+	.apron {
 		background-position: 70%;
+	}
+}
+
+@media (max-width: 400px) {
+	.apron__title {
+		font-size: 62px;
+		line-height: 1;
 	}
 }
