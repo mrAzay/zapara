@@ -32,15 +32,84 @@
                 letter-spacing: 0.1em;
             }
         }
+        &-clients{
+            max-width: 50%;
+        }
     }
     &__slider{
         position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: #FFFFFF;
         &-wrapper{
-            width: 590px;
-            height: 556px;
-            background: #FFFFFF;
+            padding: 60px;
             &-slide{
-                
+                &.swiper-slide-active{
+                }
+                .review__link{
+                    position: absolute;
+                    transform: rotate(-90deg);
+                    transform-origin: 0 0;
+                    left: -40px;
+                    bottom: 0px;
+                    width: 100px;
+                    &:after{
+                        content: "";
+                        width: 350px;
+                        height: 1px;
+                        top: 50%;
+                        left: 100%;
+                        background: #333333;
+                        position: absolute;
+                    }
+                }
+                .review__slide-header{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 70px;
+                    &-image{
+                        max-width: 154px;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                    &-info{
+                        margin-left: 35px;
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 220px;
+                        h3{
+                           font-size: 24px;
+                            line-height: 26px;
+                            margin: 0;
+                        }
+                        p{
+                            margin-top: 0;
+                            font-size: 18px;
+                            margin-bottom: 12px;
+                        }
+                        .review__slide-stars{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            &-star{
+                                width: 23px;
+                                height: 23px;
+                                fill: #F1D333;
+                                & + &{
+                                    margin-left: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .review__slide-content{
+                    max-width: 490px;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
             }
         }
         .review-button-next,

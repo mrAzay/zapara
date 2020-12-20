@@ -42,6 +42,14 @@ new Swiper('.clients__slider', {
 	}
 })
 
+new Swiper('.review__slider', {
+	slidesPerView: 1,
+	navigation: {
+		nextEl: '.review-button-next',
+		prevEl: '.review-button-prev',
+	}
+})
+
 let centered
 if (window.innerWidth < 721) {
 	console.log('work2')
