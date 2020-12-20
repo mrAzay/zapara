@@ -4,6 +4,7 @@
 
 	&__inner {
 		position: relative;
+		overflow: hidden;
 	}
 
 	&__bg {
@@ -99,10 +100,10 @@
 }
 
 #cog {
-	-webkit-animation: cog 6s infinite;			
-	-moz-animation: cog 6s infinite;
-	-ms-animation: cog 6s infinite; 			
-	animation: cog 6s infinite;
+	-webkit-animation: cog 15s infinite;			
+	-moz-animation: cog 15s infinite;
+	-ms-animation: cog 15s infinite; 			
+	animation: cog 15s infinite;
 	-webkit-animation-timing-function: linear;
 	-moz-animation-timing-function: linear;		
 	-ms-animation-timing-function: linear;
