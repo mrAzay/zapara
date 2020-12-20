@@ -23,7 +23,6 @@
 
 @media (max-width: 750px) {
 	.tunic__title {
-	
 		text-align: center;
 	}
 
@@ -36,8 +35,13 @@
 	}
 
 	.tunic__subtitle {
-		
 		line-height: 1;
 	}
-
+	.tunic{
+		padding-top: 96px;
+    padding-bottom: 244px;
+	}
 }
+
+
+

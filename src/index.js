@@ -8,6 +8,14 @@ new Swiper('.swiper-container', {
 	},
 })
 
+document.querySelector('.header__menu-btn').addEventListener('click', () => {
+	document.querySelector('.header__menu').classList.remove('active')
+})
+
+
+document.querySelector('.header__burger').addEventListener('click', () => {
+	document.querySelector('.header__menu').classList.add('active')
+})
 new Swiper('.clients__slider', {
 	loop: false,
 	slidesPerView: 5,
@@ -43,25 +51,28 @@ new Swiper('.review__slider', {
 })
 
 let centered
- if(window.innerWidth < 721){
+if (window.innerWidth < 721) {
 	console.log('work2')
 	centered = [55.771064, 37.588629];
-}else if (window.innerWidth < 1200){
+} else if (window.innerWidth < 1200) {
 	console.log('work')
 	centered = [55.771064, 37.578684];
-}  else {
+} else {
 	centered = [55.771064, 37.570684];
 }
 
 let myMap;
 ymaps.ready(init);
-function init () {
+function init() {
 	myMap = new ymaps.Map('map', {
 		center: centered,
 		zoom: 14.5
 	})
-	var myPlacemark = new ymaps.Placemark([55.771064, 37.588629], null,{
-		preset: 'islands#blueMoneyIcon'
+	var myPlacemark = new ymaps.Placemark([55.771064, 37.588629], null, {
+		iconLayout: 'default#image',
+		iconImageHref: 'img/image6.jpg',
+		iconImageSize: [50, 50],
+		iconImageOffset: [-5, -38]
 	});
 	myMap.geoObjects.add(myPlacemark);
 	myMap.behaviors.disable('scrollZoom');
