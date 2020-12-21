@@ -26,6 +26,7 @@
             width: 100%;
             margin: 0 auto;
             justify-content: space-between;
+            overflow: hidden;
             &-slide{
                 display: flex;
                 align-items: center;
@@ -68,14 +69,7 @@
     }
 }
 
-@media (max-width: 900px){
-    .clients__wrapper .clients__slider{
-        width: 80%;
-    }
-    .clients__wrapper .clients__slider-wrapper{
-        max-width: none;
-    }
-}
+
 
 @media (max-width: 400px){
     .clients__wrapper-title{
