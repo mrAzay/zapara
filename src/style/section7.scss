@@ -1,0 +1,37 @@
+.pants {
+	padding-top: 194px;
+	padding-bottom: 200px;
+	background-image: url(../img/pants-bg.jpg);
+	color: #FFFFFF;
+	background-position: right;
+	&__title {
+		font-size: 79px;
+		line-height: 96px;
+		max-width: 313px;
+		margin-bottom: 50px;
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.15em;
+		margin-bottom: 20px;
+	}
+	&__button{
+		color: #FFFFFF;
+		border-color: #FFFFFF;
+	}
+}
+
+@media (max-width: 1150px){
+	.pants{
+		background-position: center;
+	}
+}
+
+@media (max-width: 450px){
+	.pants__title{
+		font-size: 62px;
+	}
+}

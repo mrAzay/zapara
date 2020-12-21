@@ -10,6 +10,7 @@ new Swiper('.preview__slider', {
 		el: '.swiper-pagination',
 	},
 })
+
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -92,6 +93,20 @@ if (window.innerWidth < 721) {
 }
 
 
+ymaps.ready(function() {
+	const old_Map = ymaps.Map;
+	
+	ymaps.Map = function() {
+			var args = Array.prototype.slice.call(arguments);
+			
+			args.unshift(0);
+
+			var obj = new (Function.prototype.bind.apply(old_Map, args));
+
+			document.getElementById(args[1]).yaMap = obj;
+			return obj;
+	}
+});
 
 
 ymaps.ready(function () {
@@ -107,7 +122,7 @@ ymaps.ready(function () {
 			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
 		),
 
-		myPlacemark = new ymaps.Placemark([55.771064, 37.588629], {
+		myPlacemark = new ymaps.Placemark([55.771064, 37.588660], {
 			hintContent: 'A custom placemark icon',
 			balloonContent: 'This is a pretty placemark'
 		}, {
@@ -128,4 +143,25 @@ ymaps.ready(function () {
 		})
 	myMap.geoObjects
 		.add(myPlacemark);
+});
+
+
+
+ymaps.ready(function() {
+	var map = document.getElementById('map').yaMap;
+
+
+
+	window.addEventListener('resize',()=>{
+	
+		if (window.innerWidth < 721) {
+			
+			map.setCenter([55.771064, 37.588660])
+		} else if (window.innerWidth < 1200) {
+	
+			map.setCenter([55.771064, 37.578684])
+		} else {
+			map.setCenter([55.771064, 37.570684])
+		}
+	})
 });
