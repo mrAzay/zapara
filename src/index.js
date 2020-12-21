@@ -9,6 +9,9 @@ new Swiper('.preview__slider', {
 	pagination: {
 		el: '.swiper-pagination',
 	},
+	autoplay: {
+    delay: 5000,
+  }
 })
 
 const anchors = document.querySelectorAll('a[href*="#"]')
