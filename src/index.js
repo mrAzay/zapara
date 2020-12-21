@@ -93,12 +93,12 @@ ymaps.ready(function () {
 					// Custom image for the placemark icon.
 					iconImageHref: 'map.svg',
 					// The size of the placemark.
-					iconImageSize: [30, 42],
+					iconImageSize: [80, 82],
 					/**
 					 * The offset of the upper left corner of the icon relative
 					 * to its "tail" (the anchor point).
 					 */
-					iconImageOffset: [-5, -38]
+					iconImageOffset: [-32, -75]
 			})
 	myMap.geoObjects
 			.add(myPlacemark);
