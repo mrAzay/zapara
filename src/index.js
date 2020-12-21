@@ -13,11 +13,15 @@ new Swiper('.preview__slider', {
 
 document.querySelector('.header__menu-btn').addEventListener('click', () => {
 	document.querySelector('.header__menu').classList.remove('active')
+	document.querySelector('body').style.overflow = 'auto'
+
+
 })
 
 
 document.querySelector('.header__burger').addEventListener('click', () => {
 	document.querySelector('.header__menu').classList.add('active')
+	document.querySelector('body').style.overflow = 'hidden'
 })
 new Swiper('.clients__slider', {
 	loop: false,

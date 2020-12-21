@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-
+        padding: 0 30px;
         &-wrapper{
             width: 100%;
             margin: 0 auto;
@@ -53,10 +53,10 @@
             z-index: 5;
         }
         .clients-button-next{
-            right: -20px;
+            right: 0px;
         }
         .clients-button-prev{
-            left: -20px;
+            left: 0px;
             transform: rotate(180deg);
         }
         &-text{
@@ -69,8 +69,11 @@
 }
 
 @media (max-width: 900px){
+    .clients__wrapper .clients__slider{
+        width: 80%;
+    }
     .clients__wrapper .clients__slider-wrapper{
-
+        max-width: none;
     }
 }
 
