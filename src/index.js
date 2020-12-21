@@ -70,8 +70,8 @@ if (window.innerWidth < 721) {
 
 ymaps.ready(function () {
 	var myMap = new ymaps.Map('map', {
-					center: [55.751574, 37.573856],
-					zoom: 9
+					center: centered,
+					zoom: 15
 			}, {
 					searchControlProvider: 'yandex#search'
 			}),
@@ -81,7 +81,7 @@ ymaps.ready(function () {
 					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
 			),
 
-			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			myPlacemark = new ymaps.Placemark([55.771064, 37.588629], {
 					hintContent: 'A custom placemark icon',
 					balloonContent: 'This is a pretty placemark'
 			}, {
@@ -93,40 +93,13 @@ ymaps.ready(function () {
 					// Custom image for the placemark icon.
 					iconImageHref: 'map.svg',
 					// The size of the placemark.
-					iconImageSize: [30, 42],
+					iconImageSize: [80, 82],
 					/**
 					 * The offset of the upper left corner of the icon relative
 					 * to its "tail" (the anchor point).
 					 */
-					iconImageOffset: [-5, -38]
-			}),
-
-			myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-					hintContent: 'A custom placemark icon with contents',
-					balloonContent: 'This one — for Christmas',
-					iconContent: '12'
-			}, {
-					/**
-					 * Options.
-					 * You must specify this type of layout.
-					 */
-					iconLayout: 'default#imageWithContent',
-					// Custom image for the placemark icon.
-					iconImageHref: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/1200px-How_to_use_icon.svg.png',
-					// The size of the placemark.
-					iconImageSize: [48, 48],
-					/**
-					 * The offset of the upper left corner of the icon relative
-					 * to its "tail" (the anchor point).
-					 */
-					iconImageOffset: [-24, -24],
-					// Offset of the layer with content relative to the layer with the image.
-					iconContentOffset: [15, 15],
-					// Content layout.
-					iconContentLayout: MyIconContentLayout
-			});
-
+					iconImageOffset: [-32, -75]
+			})
 	myMap.geoObjects
-			.add(myPlacemark)
-			.add(myPlacemarkWithContent);
+			.add(myPlacemark);
 });
