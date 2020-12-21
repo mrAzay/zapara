@@ -10,18 +10,44 @@ new Swiper('.preview__slider', {
 		el: '.swiper-pagination',
 	},
 })
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-document.querySelector('.header__menu-btn').addEventListener('click', () => {
+for (let anchor of anchors) {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault()
+
+		const blockID = anchor.getAttribute('href').substr(1)
+
+		document.getElementById(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	})
+}
+function closeModal() {
 	document.querySelector('.header__menu').classList.remove('active')
 	document.querySelector('body').style.overflow = 'auto'
+}
 
 
+function openModal() {
+	document.querySelector('.header__menu').classList.add('active')
+	document.querySelector('body').style.overflow = 'hidden'
+}
+
+document.querySelector('.header__menu-btn').addEventListener('click', () => {
+	closeModal()
+})
+
+document.querySelectorAll('.header__menu-link').forEach(item => {
+	item.addEventListener('click', () => {
+		closeModal()
+	})
 })
 
 
 document.querySelector('.header__burger').addEventListener('click', () => {
-	document.querySelector('.header__menu').classList.add('active')
-	document.querySelector('body').style.overflow = 'hidden'
+	openModal()
 })
 new Swiper('.clients__slider', {
 	loop: false,
@@ -70,36 +96,36 @@ if (window.innerWidth < 721) {
 
 ymaps.ready(function () {
 	var myMap = new ymaps.Map('map', {
-					center: centered,
-					zoom: 15
-			}, {
-					searchControlProvider: 'yandex#search'
-			}),
+		center: centered,
+		zoom: 15
+	}, {
+		searchControlProvider: 'yandex#search'
+	}),
 
-			// Creating a content layout.
-			MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-			),
+		// Creating a content layout.
+		MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+		),
 
-			myPlacemark = new ymaps.Placemark([55.771064, 37.588629], {
-					hintContent: 'A custom placemark icon',
-					balloonContent: 'This is a pretty placemark'
-			}, {
-					/**
-					 * Options.
-					 * You must specify this type of layout.
-					 */
-					iconLayout: 'default#image',
-					// Custom image for the placemark icon.
-					iconImageHref: 'map.svg',
-					// The size of the placemark.
-					iconImageSize: [80, 82],
-					/**
-					 * The offset of the upper left corner of the icon relative
-					 * to its "tail" (the anchor point).
-					 */
-					iconImageOffset: [-32, -75]
-			})
+		myPlacemark = new ymaps.Placemark([55.771064, 37.588629], {
+			hintContent: 'A custom placemark icon',
+			balloonContent: 'This is a pretty placemark'
+		}, {
+			/**
+			 * Options.
+			 * You must specify this type of layout.
+			 */
+			iconLayout: 'default#image',
+			// Custom image for the placemark icon.
+			iconImageHref: 'map.svg',
+			// The size of the placemark.
+			iconImageSize: [80, 82],
+			/**
+			 * The offset of the upper left corner of the icon relative
+			 * to its "tail" (the anchor point).
+			 */
+			iconImageOffset: [-32, -75]
+		})
 	myMap.geoObjects
-			.add(myPlacemark);
+		.add(myPlacemark);
 });
