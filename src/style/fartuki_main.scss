@@ -1,0 +1,87 @@
+@import 'normalize.css';
+@import 'global.scss';
+@import 'header.scss';
+@import 'section12.scss';
+
+.review {
+	padding: 200px 0;
+	background-position: center;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+		background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+		background-image: linear-gradient(top, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#99000000', endColorstr='#99000000');
+	}
+
+	&__title {
+		font-size: 102px;
+		text-align: center;
+		color: #fff;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.items1 {
+	padding-top: 120px;
+	padding-bottom: 30px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		max-width: 560px;
+		width: 100%;
+		text-align: left;
+		&-img {
+			background-image: url(../img/fartuki1.jpg);
+			margin-bottom: 20px;
+			width: 100%;
+			height: 20px;
+			padding-bottom: 133.92857142857%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&-title {
+			color: #000;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 1.35;
+			margin-bottom: 8px;
+		}
+
+		&-subtitle {
+			font-size: 14px;
+			line-height: 1.55;
+			margin-bottom: 3px;
+		}
+
+		&-color {
+			margin-bottom: 12px;
+			color: rgb(158, 170, 84);
+			font-size: 14px;
+			line-height: 1.55;
+			margin-bottom: 12px;
+			font-weight: 700;
+		}
+		&-price{
+			font-size: 16px;
+		}
+	}
+}
