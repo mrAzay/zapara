@@ -8,9 +8,14 @@
     "aos": "^2.3.4",
     "normalize-css": "^2.3.1",
     "normalize.css": "^8.0.1",
+    "parcel-plugin-clean-dist": "^0.0.6",
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-include": "^1.6.0",
     "posthtml-modules": "^0.6.4",
     "swiper": "^6.4.5"
+  },
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url ./"
   }
 }

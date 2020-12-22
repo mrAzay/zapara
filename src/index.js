@@ -3,6 +3,59 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
+let sliderItems = document.querySelectorAll('.popup__slide');
+let sliderItemsMini = document.querySelectorAll('.popup__slide-prev');
+let arrowLeft = document.querySelector('.popup__slider-left');
+let arrowRight = document.querySelector('.popup__slider-right');
+let indexSlide = 0;
+
+document.querySelectorAll('.open-modal').forEach(item => {
+
+	item.addEventListener('click', ()=>{
+		document.querySelector('body').style.overflow = 'hidden'
+
+		document.querySelector('.popup').classList.add('active')
+	})
+})
+
+document.querySelector('.popup-back').addEventListener('click', ()=>{
+	document.querySelector('body').style.overflow = 'auto'
+
+	document.querySelector('.popup').classList.remove('active')
+})
+
+arrowRight.addEventListener('click', () => {
+	indexSlide < sliderItems.length - 1 ? indexSlide++ : ''
+	sliderItems.forEach(item => {
+		item.classList.remove('active')
+		item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+
+	})
+})
+
+arrowLeft.addEventListener('click', () => {
+	indexSlide > 0 ? indexSlide-- : ''
+	sliderItems.forEach(item => {
+		item.classList.remove('active')
+		item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+
+	})
+})
+sliderItemsMini.forEach(item=>{
+	item.addEventListener('click', () => {
+		sliderItemsMini.forEach(item=>{
+			item.classList.remove('active')
+
+		})
+		indexSlide = item.getAttribute('data-in')
+		item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+		sliderItems.forEach(item => {
+			item.classList.remove('active')
+			item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+		})
+	})
+	
+})
 
 new Swiper('.preview__slider', {
 	loop: true,
@@ -10,8 +63,8 @@ new Swiper('.preview__slider', {
 		el: '.swiper-pagination',
 	},
 	autoplay: {
-    delay: 5000,
-  }
+		delay: 5000,
+	}
 })
 
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -96,18 +149,18 @@ if (window.innerWidth < 721) {
 }
 
 
-ymaps.ready(function() {
+ymaps.ready(function () {
 	const old_Map = ymaps.Map;
-	
-	ymaps.Map = function() {
-			var args = Array.prototype.slice.call(arguments);
-			
-			args.unshift(0);
 
-			var obj = new (Function.prototype.bind.apply(old_Map, args));
+	ymaps.Map = function () {
+		var args = Array.prototype.slice.call(arguments);
 
-			document.getElementById(args[1]).yaMap = obj;
-			return obj;
+		args.unshift(0);
+
+		var obj = new (Function.prototype.bind.apply(old_Map, args));
+
+		document.getElementById(args[1]).yaMap = obj;
+		return obj;
 	}
 });
 
@@ -150,18 +203,18 @@ ymaps.ready(function () {
 
 
 
-ymaps.ready(function() {
+ymaps.ready(function () {
 	var map = document.getElementById('map').yaMap;
 
 
 
-	window.addEventListener('resize',()=>{
-	
+	window.addEventListener('resize', () => {
+
 		if (window.innerWidth < 721) {
-			
+
 			map.setCenter([55.771064, 37.588660])
 		} else if (window.innerWidth < 1200) {
-	
+
 			map.setCenter([55.771064, 37.578684])
 		} else {
 			map.setCenter([55.771064, 37.570684])
@@ -179,7 +232,7 @@ function toggleAccordion() {
 	let thisItem = this.parentNode;
 
 	items.forEach(item => {
-		if (thisItem == item ) {
+		if (thisItem == item) {
 			// if this item is equal to the clicked item, open it.
 			thisItem.classList.toggle('active');
 			return;
@@ -190,3 +243,4 @@ function toggleAccordion() {
 }
 
 title.forEach(question => question.addEventListener('click', toggleAccordion));
+
