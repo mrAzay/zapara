@@ -1,0 +1,11 @@
+.bruki{
+	.intro{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		&::before{
+			background-image: url('../img/bruki.webp');
+
+		}
+	}
+}

@@ -3,6 +3,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
+var menu = ['fartuki1', 'fartuki1', 'fartuki1']
+var fartuki = new Swiper ('.fartuki-slider-container', {
+    pagination: {
+      el: '.fartuki-slider-pagination',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return `<img src="/${menu[index]}.8fefa7b1.jpg" class="fartuki-slider-pagination-item ${className}">`;
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+
 let sliderItems = document.querySelectorAll('.popup__slide');
 let sliderItemsMini = document.querySelectorAll('.popup__slide-prev');
 let arrowLeft = document.querySelector('.popup__slider-left');
