@@ -1,0 +1,71 @@
+.remni {
+	background-image: url('../img/remni.jpg');
+	background-position: center;
+
+	&__text {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		max-width: 420px;
+		color: #fff;
+		font-size: 32px;
+		line-height: 1.35;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 160px;
+			height: 2px;
+			background-color: #fff;
+			position: absolute;
+			top: 100px;
+			left: 0;
+		}
+	}
+}
+
+.babochka {
+	padding-top: 180px;
+	padding-bottom: 120px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../img/babochka.webp');
+
+	&__text {
+		max-width: 560px;
+		background-color: #000;
+		padding: 20px;
+		color: #fff;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 1.55;
+		margin-left: auto;
+	}
+}
+
+.tekstil {
+	background-image: url('../img/textiljpg.jpg');
+	background-position: center;
+	padding: 160px 0 170px;
+	color: #fff;
+	text-align: center;
+
+	&__subtitle {
+		letter-spacing: 2.5px;
+		margin-bottom: 50px;
+		font-size: 14px;
+		line-height: 1.23;
+	}
+
+	&__title {
+		font-size: 36px;
+		line-height: 1.23;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		letter-spacing: .7px;
+		font-size: 16px;
+		line-height: 1.55;
+	}
+}

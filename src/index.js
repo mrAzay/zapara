@@ -1,7 +1,12 @@
 import Swiper from 'swiper/bundle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'fslightbox'
+
+
 AOS.init();
+
+
 
 if(document.querySelector('.popup-back')){
 	document.querySelector('.popup-back').addEventListener('click', () => {

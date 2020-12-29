@@ -169,10 +169,101 @@
 			</div>
 		</section>
 	</main>
+	<include src="./src/html/section11.html">
+	</include>
 	<include src="./src/html/section12.html">
 	</include>
 	<include src="./src/html/svg-sprite.html">
 	</include>
+	<div class="popup">
+		<div class="popup-back">Назад</div>
+
+		<div class="container">
+				<div class="popup__inner">
+						<div class="popup__slider ">
+								<button class="popup__slider-left">
+										<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink">
+												<desc>Left</desc>
+												<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
+														stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline> <svg
+														style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink">
+														<desc>Right</desc>
+														<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
+																stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5">
+														</polyline>
+												</svg>
+										</svg>
+								</button>
+								<button class="popup__slider-right">
+										<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink">
+												<desc>Right</desc>
+												<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
+														stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline>
+										</svg>
+								</button>
+								<div class="popup__slide active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
+								</div>
+								<div class="popup__slide" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+								<div class="popup__slide" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+								<div class="popup__slider-prev ">
+										<div class="popup__slide-prev active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
+										</div>
+										<div class="popup__slide-prev" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+										<div class="popup__slide-prev" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+								</div>
+						</div>
+						<div class="popup__text">
+								<div class="popup__title">Рубашка базовая</div>
+								<div class="popup__art">Арт: 002</div>
+								<div class="popup__price">2300 р</div>
+								<label for="razmer" class="popup__label">
+										Размер
+								</label>
+								<div class="popup__select-wrap">
+										<select name="razmer" id="razmer" class="popup__select">
+												<option value="XS" class="popup__option">XS</option>
+												<option value="S" class="popup__option">S</option>
+												<option value="M" class="popup__option">M</option>
+										</select>
+								</div>
+								<label for="pol" class="popup__label">
+										Пол
+								</label>
+								<div class="popup__select-wrap">
+										<select name="pol" id="pol" class="popup__select">
+												<option value="XS" class="popup__option">XS</option>
+												<option value="S" class="popup__option">S</option>
+												<option value="M" class="popup__option">M</option>
+										</select>
+
+								</div>
+								<label for="color" class="popup__label">
+										Цвет
+								</label>
+								<div class="popup__select-wrap">
+										<select name="color" id="color" class="popup__select">
+												<option value="XS" class="popup__option">XS</option>
+												<option value="S" class="popup__option">S</option>
+												<option value="M" class="popup__option">M</option>
+										</select>
+								</div>
+								<button class="popup__btn">В корзину</button>
+								<div class="popup__decription">
+										Рубашка с длинными рукавами<br> Воротник <span
+												style="color: rgb(20, 120, 114);">классический</span><br> Нагрудный карман слева<br>
+										Застежка: кнопки<br><br> Состав: смесовый для частых стирок (хлопок 60%, полиэстер 40%)
+										<br><br> Полустрогая модель <br><br> Преимущества ткани: <br> • Дышащая, удобная,
+										приятная к телу ткань; <br> • Гипоаллергенна; <br> • Можно часто стирать
+										<br><br>Соблюдайте рекомендации по уходу! <br><br>Цена:<br>1 - 9 шт: 2300 ₽<br>10 - 49
+										шт: 2100 ₽<br>50 - 99 шт: 1900 ₽<br>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -186,7 +277,7 @@
 				el: '.fartuki-slider-pagination',
 				clickable: true,
 				renderBullet: function (index, className) {
-					return `<img src="/${menu[index]}.jpg" class="fartuki-slider-pagination-item ${className}">`;
+					return `<img ${src="/${menu[index]}.jpg"} class="fartuki-slider-pagination-item ${className}">`;
 				},
 			},
 
@@ -247,95 +338,7 @@
 
 		})
 	</script>
-	    <div class="popup">
-        <div class="popup-back">Назад</div>
-
-        <div class="container">
-            <div class="popup__inner">
-                <div class="popup__slider ">
-                    <button class="popup__slider-left">
-                        <svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <desc>Left</desc>
-                            <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
-                                stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline> <svg
-                                style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>Right</desc>
-                                <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
-                                    stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5">
-                                </polyline>
-                            </svg>
-                        </svg>
-                    </button>
-                    <button class="popup__slider-right">
-                        <svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <desc>Right</desc>
-                            <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
-                                stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline>
-                        </svg>
-                    </button>
-                    <div class="popup__slide active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
-                    </div>
-                    <div class="popup__slide" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-                    <div class="popup__slide" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-                    <div class="popup__slider-prev ">
-                        <div class="popup__slide-prev active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
-                        </div>
-                        <div class="popup__slide-prev" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-                        <div class="popup__slide-prev" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-                    </div>
-                </div>
-                <div class="popup__text">
-                    <div class="popup__title">Рубашка базовая</div>
-                    <div class="popup__art">Арт: 002</div>
-                    <div class="popup__price">2300 р</div>
-                    <label for="razmer" class="popup__label">
-                        Размер
-                    </label>
-                    <div class="popup__select-wrap">
-                        <select name="razmer" id="razmer" class="popup__select">
-                            <option value="XS" class="popup__option">XS</option>
-                            <option value="S" class="popup__option">S</option>
-                            <option value="M" class="popup__option">M</option>
-                        </select>
-                    </div>
-                    <label for="pol" class="popup__label">
-                        Пол
-                    </label>
-                    <div class="popup__select-wrap">
-                        <select name="pol" id="pol" class="popup__select">
-                            <option value="XS" class="popup__option">XS</option>
-                            <option value="S" class="popup__option">S</option>
-                            <option value="M" class="popup__option">M</option>
-                        </select>
-
-                    </div>
-                    <label for="color" class="popup__label">
-                        Цвет
-                    </label>
-                    <div class="popup__select-wrap">
-                        <select name="color" id="color" class="popup__select">
-                            <option value="XS" class="popup__option">XS</option>
-                            <option value="S" class="popup__option">S</option>
-                            <option value="M" class="popup__option">M</option>
-                        </select>
-                    </div>
-                    <button class="popup__btn">В корзину</button>
-                    <div class="popup__decription">
-                        Рубашка с длинными рукавами<br> Воротник <span
-                            style="color: rgb(20, 120, 114);">классический</span><br> Нагрудный карман слева<br>
-                        Застежка: кнопки<br><br> Состав: смесовый для частых стирок (хлопок 60%, полиэстер 40%)
-                        <br><br> Полустрогая модель <br><br> Преимущества ткани: <br> • Дышащая, удобная,
-                        приятная к телу ткань; <br> • Гипоаллергенна; <br> • Можно часто стирать
-                        <br><br>Соблюдайте рекомендации по уходу! <br><br>Цена:<br>1 - 9 шт: 2300 ₽<br>10 - 49
-                        шт: 2100 ₽<br>50 - 99 шт: 1900 ₽<br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	   
 </body>
 
 </html>
