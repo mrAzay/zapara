@@ -2,7 +2,19 @@
 @import 'global.scss';
 @import 'header.scss';
 @import 'section12.scss';
-
+.fartuki-main{
+	display: flex;
+	flex-direction: column;
+}
+.items1-1{
+	order: 1;
+}
+.fartuki-slider-section{
+	order: 2;
+}
+.items1-2{
+	order: 3;
+}
 .review {
 	padding: 200px 0;
 	background-position: center;
