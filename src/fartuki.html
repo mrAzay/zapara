@@ -18,61 +18,26 @@
 
 	<include src="./src/html/header.html"></include>
 
-	<main class="main fartuki-main">
+	<main class="main ">
 		<section class="review" style="background-image: url(img/fartuki-preview.webp);">
 			<div class="container">
 				<div class="review__inner">
 					<h1 class="review__title">ФАРТУКИ</h1>
-			
+
 				</div>
 			</div>
 		</section>
-		<section class="items1 items1-1">
+		<section class="items1">
 			<div class="container">
 				<div class="items1__inner">
-					<div class="items1__item open-modal">
+					<div class="items1__item open-modal" id="item1">
 						<div class="items1__item-img"></div>
 						<div class="items1__item-title">Basic-X</div>
 						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
 						<div class="items1__item-color">Выбор цвета</div>
 						<div class="items1__item-price">2700 р.</div>
 					</div>
-					<div class="items1__item open-modal">
-						<div class="items1__item-img"></div>
-						<div class="items1__item-title">Basic-X</div>
-						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
-						<div class="items1__item-color">Выбор цвета</div>
-						<div class="items1__item-price">2700 р.</div>
-					</div>
-					<div class="items1__item open-modal">
-						<div class="items1__item-img"></div>
-						<div class="items1__item-title">Basic-X</div>
-						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
-						<div class="items1__item-color">Выбор цвета</div>
-						<div class="items1__item-price">2700 р.</div>
-					</div>
-					<div class="items1__item open-modal">
-						<div class="items1__item-img"></div>
-						<div class="items1__item-title">Basic-X</div>
-						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
-						<div class="items1__item-color">Выбор цвета</div>
-						<div class="items1__item-price">2700 р.</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	
-		<section class="items1 items1-2">
-			<div class="container">
-				<div class="items1__inner">
-					<div class="items1__item open-modal">
-						<div class="items1__item-img"></div>
-						<div class="items1__item-title">Basic-X</div>
-						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
-						<div class="items1__item-color">Выбор цвета</div>
-						<div class="items1__item-price">2700 р.</div>
-					</div>
-					<div class="items1__item open-modal">
+					<div class="items1__item open-modal" id="item2">
 						<div class="items1__item-img"></div>
 						<div class="items1__item-title">Basic-X</div>
 						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
@@ -121,11 +86,11 @@
 					</div>
 					<div class="fartuki-slider-swiper-button-next swiper-button-next">
 						<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink">
-						<desc>Left</desc>
-						<polyline fill="none" stroke="#222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
-							points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline>
-					</svg>
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<desc>Left</desc>
+							<polyline fill="none" stroke="#222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
+								points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline>
+						</svg>
 					</div>
 
 				</div>
@@ -169,6 +134,40 @@
 			</div>
 			</div>
 		</section>
+		<section class="items1">
+			<div class="container">
+				<div class="items1__inner">
+					<div class="items1__item open-modal">
+						<div class="items1__item-img"></div>
+						<div class="items1__item-title">Basic-X</div>
+						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
+						<div class="items1__item-color">Выбор цвета</div>
+						<div class="items1__item-price">2700 р.</div>
+					</div>
+					<div class="items1__item open-modal">
+						<div class="items1__item-img"></div>
+						<div class="items1__item-title">Basic-X</div>
+						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
+						<div class="items1__item-color">Выбор цвета</div>
+						<div class="items1__item-price">2700 р.</div>
+					</div>
+					<div class="items1__item open-modal">
+						<div class="items1__item-img"></div>
+						<div class="items1__item-title">Basic-X</div>
+						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
+						<div class="items1__item-color">Выбор цвета</div>
+						<div class="items1__item-price">2700 р.</div>
+					</div>
+					<div class="items1__item open-modal">
+						<div class="items1__item-img"></div>
+						<div class="items1__item-title">Basic-X</div>
+						<div class="items1__item-subtitle">Крестовые завязки с кожей</div>
+						<div class="items1__item-color">Выбор цвета</div>
+						<div class="items1__item-price">2700 р.</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<include src="./src/html/section11.html">
 	</include>
@@ -176,95 +175,190 @@
 	</include>
 	<include src="./src/html/svg-sprite.html">
 	</include>
-	<div class="popup">
+	<div class="popup" data-id="item1">
 		<div class="popup-back">Назад</div>
 
 		<div class="container">
-				<div class="popup__inner">
-						<div class="popup__slider ">
-								<button class="popup__slider-left">
-										<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink">
-												<desc>Left</desc>
-												<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
-														stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline> <svg
-														style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-														xmlns:xlink="http://www.w3.org/1999/xlink">
-														<desc>Right</desc>
-														<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
-																stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5">
-														</polyline>
-												</svg>
-										</svg>
-								</button>
-								<button class="popup__slider-right">
-										<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink">
-												<desc>Right</desc>
-												<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
-														stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline>
-										</svg>
-								</button>
-								<div class="popup__slide active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
-								</div>
-								<div class="popup__slide" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-								<div class="popup__slide" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-								<div class="popup__slider-prev ">
-										<div class="popup__slide-prev active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
-										</div>
-										<div class="popup__slide-prev" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-										<div class="popup__slide-prev" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
-								</div>
+			<div class="popup__inner">
+				<div class="popup__slider ">
+					<button class="popup__slider-left">
+						<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<desc>Left</desc>
+							<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
+								points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline> <svg style="display: block" viewBox="0 0 7.3 13"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<desc>Right</desc>
+								<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
+									points="0.5,0.5 6.5,6.5 0.5,12.5">
+								</polyline>
+							</svg>
+						</svg>
+					</button>
+					<button class="popup__slider-right">
+						<svg style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<desc>Right</desc>
+							<polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1"
+								points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline>
+						</svg>
+					</button>
+					<div class="popup__slide active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
+					</div>
+					<div class="popup__slide" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+					<div class="popup__slide" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+					<div class="popup__slider-prev ">
+						<div class="popup__slide-prev active" data-in="0"> <img src="./img/photo-1.jpg" alt="" class="">
 						</div>
-						<div class="popup__text">
-								<div class="popup__title">Рубашка базовая</div>
-								<div class="popup__art">Арт: 002</div>
-								<div class="popup__price">2300 р</div>
-								<label for="razmer" class="popup__label">
-										Размер
-								</label>
-								<div class="popup__select-wrap">
-										<select name="razmer" id="razmer" class="popup__select">
-												<option value="XS" class="popup__option">XS</option>
-												<option value="S" class="popup__option">S</option>
-												<option value="M" class="popup__option">M</option>
-										</select>
-								</div>
-								<label for="pol" class="popup__label">
-										Пол
-								</label>
-								<div class="popup__select-wrap">
-										<select name="pol" id="pol" class="popup__select">
-												<option value="XS" class="popup__option">XS</option>
-												<option value="S" class="popup__option">S</option>
-												<option value="M" class="popup__option">M</option>
-										</select>
-
-								</div>
-								<label for="color" class="popup__label">
-										Цвет
-								</label>
-								<div class="popup__select-wrap">
-										<select name="color" id="color" class="popup__select">
-												<option value="XS" class="popup__option">XS</option>
-												<option value="S" class="popup__option">S</option>
-												<option value="M" class="popup__option">M</option>
-										</select>
-								</div>
-								<button class="popup__btn">В корзину</button>
-								<div class="popup__decription">
-										Рубашка с длинными рукавами<br> Воротник <span
-												style="color: rgb(20, 120, 114);">классический</span><br> Нагрудный карман слева<br>
-										Застежка: кнопки<br><br> Состав: смесовый для частых стирок (хлопок 60%, полиэстер 40%)
-										<br><br> Полустрогая модель <br><br> Преимущества ткани: <br> • Дышащая, удобная,
-										приятная к телу ткань; <br> • Гипоаллергенна; <br> • Можно часто стирать
-										<br><br>Соблюдайте рекомендации по уходу! <br><br>Цена:<br>1 - 9 шт: 2300 ₽<br>10 - 49
-										шт: 2100 ₽<br>50 - 99 шт: 1900 ₽<br>
-								</div>
-						</div>
+						<div class="popup__slide-prev" data-in="1"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+						<div class="popup__slide-prev" data-in="2"> <img src="./img/photo-1.jpg" alt="" class=""></div>
+					</div>
 				</div>
+				<div class="popup__text">
+					<div class="popup__title">Рубашка базовая</div>
+					<div class="popup__art">Арт: 002</div>
+					<div class="popup__price">2300 р</div>
+					<label for="razmer" class="popup__label">
+						Размер
+					</label>
+					<div class="popup__select-wrap">
+						<select name="razmer" id="razmer" class="popup__select">
+							<option value="XS" class="popup__option">XS</option>
+							<option value="S" class="popup__option">S</option>
+							<option value="M" class="popup__option">M</option>
+						</select>
+					</div>
+					<label for="pol" class="popup__label">
+						Пол
+					</label>
+					<div class="popup__select-wrap">
+						<select name="pol" id="pol" class="popup__select">
+							<option value="XS" class="popup__option">XS</option>
+							<option value="S" class="popup__option">S</option>
+							<option value="M" class="popup__option">M</option>
+						</select>
+
+					</div>
+					<label for="color" class="popup__label">
+						Цвет
+					</label>
+					<div class="popup__select-wrap">
+						<select name="color" id="color" class="popup__select">
+							<option value="XS" class="popup__option">XS</option>
+							<option value="S" class="popup__option">S</option>
+							<option value="M" class="popup__option">M</option>
+						</select>
+					</div>
+					<button class="popup__btn">В корзину</button>
+					<div class="popup__decription">
+						Рубашка с длинными рукавами<br> Воротник <span style="color: rgb(20, 120, 114);">классический</span><br>
+						Нагрудный карман слева<br>
+						Застежка: кнопки<br><br> Состав: смесовый для частых стирок (хлопок 60%, полиэстер 40%)
+						<br><br> Полустрогая модель <br><br> Преимущества ткани: <br> • Дышащая, удобная,
+						приятная к телу ткань; <br> • Гипоаллергенна; <br> • Можно часто стирать
+						<br><br>Соблюдайте рекомендации по уходу! <br><br>Цена:<br>1 - 9 шт: 2300 ₽<br>10 - 49
+						шт: 2100 ₽<br>50 - 99 шт: 1900 ₽<br>
+					</div>
+				</div>
+			</div>
 		</div>
-</div>
+	</div>
+	<div class="basket">
+		<div class="basket__inner">
+			<div class="basket__close">
+				<svg class="t706__cartwin-close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+						<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+							x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+						<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+							x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+					</g>
+				</svg>
+			</div>
+			<div class="basket__modal">
+				<div class="basket__title">Подтверждение заказа:
+				</div>
+				<div class="basket__modal-items">
+					<div class="basket__modal-item">
+						<img class="basket__modal-img"
+							src="https://static.tildacdn.com/tild3935-3463-4637-b664-373938666466/_10.jpg" alt="">
+						<div class="basket__modal-info">
+							<a href="#" class="basket__modal-title">Clip</a>
+							<div class="basket__modal-text">Размер: XS</div>
+							<div class="basket__modal-text">Пол: Мужской
+							</div>
+							<div class="basket__modal-text">Цвет: Серый
+							</div>
+						</div>
+						<div class="basket__modal-colvo">
+							<button class="basket__modal-colvo-plus">
+								<img src="img/arrows_circle_minus.svg" alt="">
+							</button>
+							<input value="1" type="text" class="basket__modal-colvo-num">
+							<button class="basket__modal-colvo-plus">
+								<img src="img/arrows_circle_plus.svg" alt="">
+							</button>
+						</div>
+						<div class="basket__modal-price">3 000 р. </div>
+						<button class="basket__modal-close">
+							<img src="img/arrows_circle_remove.svg" alt="">
+						</button>
+					</div>
+
+				</div>
+				<div class="basket__modal-all-price">Сумма: <span> 3 400 р.</span>
+				</div>
+				<div class="basket__modal-form">
+					<div class="basket__modal-form-title">Заполните форму для связи с вами.
+					</div>
+					<label class="basket__modal-form-label">
+						<span class="basket__modal-label">Ваше имя</span>
+						<input class="basket__modal-input" type="text">
+					</label>
+					<label class="basket__modal-form-label">
+						<span class="basket__modal-label">Ваш Email</span>
+						<input class="basket__modal-input" type="text">
+					</label>
+					<label class="basket__modal-form-label">
+						<span class="basket__modal-label">Ваш телефон</span>
+						<input class="basket__modal-input" type="text">
+					</label>
+					<div class="basket__modal-dostavka">
+						<div class="basket__modal-dostavka-title">Доставка</div>
+						<label class="basket__modal-dostavka-label">
+							<input type="radio" class="basket__modal-dostavka-radio" name="dostavka">
+
+							<span class="castom-radio"></span>
+							<span class="basket__modal-dostavka-text">Самовывоз (бесплатно) </span>
+						</label>
+						<label class="basket__modal-dostavka-label">
+							<input type="radio" class="basket__modal-dostavka-radio" name="dostavka">
+							<span class="castom-radio"></span>
+
+							<span class="basket__modal-dostavka-text" >До адреса (рассчитывается отдельно)</span>
+						</label>
+					
+					</div>
+					<textarea class="basket__modal-textarea"></textarea>
+					<div class="basket__modal-btn">Оформить заказ</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.querySelector('.basket__close').addEventListener('click', ()=>{
+			document.querySelector('body').style.overflow = 'auto'
+			document.querySelector('.basket').style.display = 'none'
+		})
+		document.querySelectorAll('.popup__btn').forEach(item=>{
+			item.addEventListener('click', ()=>{
+				document.querySelector('.basket').style.display = 'block'
+				document.querySelector('body').style.overflow = 'hidden'
+				document.querySelector('.popup').classList.toggle('active')
+			})
+		})
+	</script>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -280,54 +374,55 @@
 
 		document.querySelectorAll('.open-modal').forEach(item => {
 
-				item.addEventListener('click', () => {
-						document.querySelector('body').style.overflow = 'hidden'
+			item.addEventListener('click', () => {
 
-						document.querySelector('.popup').classList.add('active')
-				})
+				document.querySelector('body').style.overflow = 'hidden'
+
+				document.querySelector(`[data-id="${item.id}"]`).classList.add('active')
+			})
 		})
 
 		document.querySelector('.popup-back').addEventListener('click', () => {
-				document.querySelector('body').style.overflow = 'auto'
+			document.querySelector('body').style.overflow = 'auto'
 
-				document.querySelector('.popup').classList.remove('active')
+			document.querySelector('.popup').classList.remove('active')
 		})
 
 		arrowRight.addEventListener('click', () => {
-				indexSlide < sliderItems.length - 1 ? indexSlide++ : ''
-				sliderItems.forEach(item => {
-						item.classList.remove('active')
-						item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+			indexSlide < sliderItems.length - 1 ? indexSlide++ : ''
+			sliderItems.forEach(item => {
+				item.classList.remove('active')
+				item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
 
-				})
+			})
 		})
 
 		arrowLeft.addEventListener('click', () => {
-				indexSlide > 0 ? indexSlide-- : ''
-				sliderItems.forEach(item => {
-						item.classList.remove('active')
-						item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+			indexSlide > 0 ? indexSlide-- : ''
+			sliderItems.forEach(item => {
+				item.classList.remove('active')
+				item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
 
-				})
+			})
 		})
 		sliderItemsMini.forEach(item => {
-				item.addEventListener('click', () => {
-						sliderItemsMini.forEach(item => {
-								item.classList.remove('active')
+			item.addEventListener('click', () => {
+				sliderItemsMini.forEach(item => {
+					item.classList.remove('active')
 
-						})
-						indexSlide = item.getAttribute('data-in')
-						item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
-						sliderItems.forEach(item => {
-								item.classList.remove('active')
-								item.getAttribute('data-in') == indexSlide ? item.classList.add('active') :
-										''
-						})
 				})
+				indexSlide = item.getAttribute('data-in')
+				item.getAttribute('data-in') == indexSlide ? item.classList.add('active') : ''
+				sliderItems.forEach(item => {
+					item.classList.remove('active')
+					item.getAttribute('data-in') == indexSlide ? item.classList.add('active') :
+						''
+				})
+			})
 
 		})
-</script>
-	   
+	</script>
+
 </body>
 
 </html>
